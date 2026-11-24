@@ -1,34 +1,26 @@
-# Publish your profile
+# Profile README maintenance
 
-1. Create a **public** GitHub repository named exactly `aniketsidhu123` under your account. Use `main` as the default branch.
-2. Put the contents of this folder at the repository root, including the hidden `.github` folder. Do not upload the ZIP itself or an extra enclosing folder.
-3. Commit and push. Your README will appear on your GitHub profile.
-4. Open **Actions → Refresh profile art → Run workflow** to verify the refresh.
+This repository's root README appears at [github.com/aniketsidhu123](https://github.com/aniketsidhu123). Open [preview.html](preview.html) locally for the dark layout. If you change README content, GitHub's Markdown preview shows the latest text before you commit.
 
-The workflow runs daily around 11:47 AM India time (06:17 UTC); GitHub can delay scheduled runs. It uses the built-in repository token to commit changes. No personal access token or external stats service is required. Repository settings or branch protection must permit the workflow's push.
+## Refresh activity
 
-## Upload using Git
+Use Node.js 22 or newer. The existing **Refresh profile art** workflow updates the contribution and public repository snapshots and the generated cards daily. It can also be started from the repository's Actions tab.
 
-From this folder after creating the empty repository:
+- Run `node scripts/build.mjs` to refresh from GitHub.
+- Run `node scripts/build.mjs --offline` to rebuild from the committed snapshots.
 
-```sh
-git init -b main
-git add .
-git commit -m "Add animated profile README"
-git remote add origin https://github.com/aniketsidhu123/aniketsidhu123.git
-git push -u origin main
-```
+The dashboard reads GitHub's public profile and contribution calendar. Language percentages reflect the primary language of repositories with a known language, based on the scope stated on the card.
 
-Git will use your own GitHub authentication. These files have not been published automatically.
+## Artwork and credits
 
-## Customize
+- Layout reference: GitSkins' creative dev template, credited to [@himanshu201031](https://github.com/himanshu201031) in the recording.
+- [Workstation banner](assets/workstation.svg): original pixel art made with the built-in image generation tool, with SVG animations for the CRT, LED and steam. Reduced-motion settings pause the animation.
+- [Skill Icons](https://github.com/tandpfun/skill-icons): locally bundled icons and [MIT license](assets/skill-icons-license.txt).
+- Earlier terminal layout and activity refresh were inspired by [Avi Vashishta's animated README guide](https://www.avivashishta.com/blog/build-animated-github-profile-readme).
 
-Edit `profile.json` to update the name and info rows. With Node.js 22 or newer, run `node scripts/build.mjs` to rebuild. No packages are needed. `node scripts/build.mjs --offline` uses saved contribution data. Edit `README.md` for project links.
+<details>
+<summary>Banner generation prompt</summary>
 
-Open `preview.html` in a browser to view the animation. SVGs use a dark background in both GitHub themes and reveal once on load. Reduced-motion preferences disable the animation. The README images can wrap on small screens.
+Use case: illustration-story. Asset type: wide GitHub profile README hero banner, landscape approx 2:1. Make an original detailed 16-bit pixel-art illustration of a young South Asian developer seen from behind typing at a retro CRT workstation, dark midnight workspace, teal desk light and small amber accents, keyboard, subtle plants and books, diagonal overhead three-quarter composition and a moonlit New Delhi skyline visible through a window. A cool-blue CRT displays abstract graphics and a pale turquoise wireframe solid suggesting spatial CAD and AI. Keep the composition distinct from any existing pixel artist's work. Crisp visible pixels, restrained navy and petrol-green shading and contrast, warm rust hoodie. Image only, no printed words, no signatures, no logos, no margins. The main composition must fit the central 80 percent vertically for a wide banner crop.
 
-The AS monogram is intentional: your public avatar was a generated identicon. A personal photo can be used for an ASCII portrait later. Bio text comes from your public GitHub profile; edit it as needed.
-
-The contribution scraper checks for missing or malformed data and fails without replacing the saved calendar if GitHub's HTML format changes. Counts match the public calendar's visibility. GitHub may cache images briefly and may disable scheduled workflows in inactive public repositories.
-
-Design inspired by Avi Vashishta's guide: https://www.avivashishta.com/blog/build-animated-github-profile-readme . This implementation is original and uses dependency-free Node.js.
+</details>

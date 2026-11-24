@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="275" viewBox="0 0 880 275" role="img" aria-labelledby="title description">
+<title id="title">Language stack</title>
+<desc id="description">JavaScript: 31 repositories. Python: 9 repositories. TypeScript: 3 repositories. HTML: 2 repositories. Jupyter Notebook: 2 repositories</desc>
+<defs>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+    <stop stop-color="#102137"/><stop offset=".52" stop-color="#0a1220"/><stop offset="1" stop-color="#172039"/>
+  </linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+    <stop stop-color="#376d95"/><stop offset=".47" stop-color="#304359"/><stop offset="1" stop-color="#4e4380"/>
+  </linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+    <stop stop-color="#182b3e"/><stop offset="1" stop-color="#101a2c"/>
+  </linearGradient>
+</defs>
+<style>
+  text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; fill: #e6f1fb; font-size: 14px; }
+  .heading { font-size: 24px; font-weight: 750; }
+  .subheading { font-size: 15px; font-weight: 700; fill: #d7e5f7; }
+  .small { font-size: 12px; fill: #adc0d8; }
+  .detail { font-size: 13px; font-weight: 650; }
+  .eyebrow { font: 700 10px ui-monospace, Consolas, monospace; letter-spacing: 1.35px; fill: #9acaff; }
+  .metric { font-size: 30px; font-weight: 750; }
+  .blue { fill: #8ed8ff; } .violet { fill: #c4abff; } .green { fill: #8ce5c8; }
+  .bar { transform-box: fill-box; transform-origin: left; animation: rise .85s cubic-bezier(.22,.61,.36,1) both; }
+  @keyframes rise { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @media (prefers-reduced-motion: reduce) { .bar { animation: none; } .trail { display: none; } }
+</style>
+<rect x="1" y="1" width="878" height="273" rx="15" fill="url(#surface)" stroke="url(#edge)"/>
+<path d="M24 17h34" stroke="#77caff" stroke-width="2" stroke-linecap="round"/>
+<text x="24" y="39" class="heading" >Language stack</text><text x="24" y="64" class="small" >Primary language by public repository · 47 of 58 classified</text><text x="856" y="38" class="eyebrow" text-anchor="end">REPOSITORIES</text><circle cx="30" cy="96" r="4" fill="#f1e05a"/><text x="44" y="100" class="detail" >JavaScript</text><text x="260" y="100" class="small" text-anchor="end">31</text><rect x="280" y="91" width="495" height="8" rx="4" fill="#23384d"/><rect class="bar" x="280" y="91" width="326" height="8" rx="4" fill="#f1e05a" style="animation-delay:0s"/><text x="856" y="100" class="detail" text-anchor="end">66%</text><circle cx="30" cy="130" r="4" fill="#79d5eb"/><text x="44" y="134" class="detail" >Python</text><text x="260" y="134" class="small" text-anchor="end">9</text><rect x="280" y="125" width="495" height="8" rx="4" fill="#23384d"/><rect class="bar" x="280" y="125" width="95" height="8" rx="4" fill="#79d5eb" style="animation-delay:0.08s"/><text x="856" y="134" class="detail" text-anchor="end">19%</text><circle cx="30" cy="164" r="4" fill="#69a8ef"/><text x="44" y="168" class="detail" >TypeScript</text><text x="260" y="168" class="small" text-anchor="end">3</text><rect x="280" y="159" width="495" height="8" rx="4" fill="#23384d"/><rect class="bar" x="280" y="159" width="32" height="8" rx="4" fill="#69a8ef" style="animation-delay:0.16s"/><text x="856" y="168" class="detail" text-anchor="end">6%</text><circle cx="30" cy="198" r="4" fill="#f38b73"/><text x="44" y="202" class="detail" >HTML</text><text x="260" y="202" class="small" text-anchor="end">2</text><rect x="280" y="193" width="495" height="8" rx="4" fill="#23384d"/><rect class="bar" x="280" y="193" width="21" height="8" rx="4" fill="#f38b73" style="animation-delay:0.24s"/><text x="856" y="202" class="detail" text-anchor="end">4%</text><circle cx="30" cy="232" r="4" fill="#e9a65b"/><text x="44" y="236" class="detail" >Jupyter Notebook</text><text x="260" y="236" class="small" text-anchor="end">2</text><rect x="280" y="227" width="495" height="8" rx="4" fill="#23384d"/><rect class="bar" x="280" y="227" width="21" height="8" rx="4" fill="#e9a65b" style="animation-delay:0.32s"/><text x="856" y="236" class="detail" text-anchor="end">4%</text>
+</svg>
